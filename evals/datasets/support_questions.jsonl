@@ -1,0 +1,5 @@
+{"id":"q001","question":"How does this project use Azure AI Search?","expected_topics":["knowledge base","Azure AI Search","grounding"],"must_cite":true}
+{"id":"q002","question":"What is the role of Microsoft Foundry Agents?","expected_topics":["model","instructions","tools"],"must_cite":true}
+{"id":"q003","question":"How are documents grounded for answers?","expected_topics":["knowledge base","file search","Azure Blob Storage"],"must_cite":true}
+{"id":"q004","question":"Why do evaluations matter in GenAIOps?","expected_topics":["groundedness","citation quality","latency"],"must_cite":true}
+{"id":"q005","question":"What should monitoring and tracing capture?","expected_topics":["latency","token usage","execution flow"],"must_cite":true}

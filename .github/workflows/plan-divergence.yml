@@ -1,0 +1,25 @@
+name: Plan Divergence
+
+on:
+  push:
+    paths:
+      - "wiki/**"
+      - "scripts/plan_divergence.py"
+      - ".plan-divergence.yml"
+      - ".github/workflows/plan-divergence.yml"
+  pull_request:
+    paths:
+      - "wiki/**"
+      - "scripts/plan_divergence.py"
+      - ".plan-divergence.yml"
+      - ".github/workflows/plan-divergence.yml"
+
+jobs:
+  plan-divergence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/plan_divergence.py

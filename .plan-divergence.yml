@@ -1,0 +1,11 @@
+plans_directory: wiki/plans
+plan_index: wiki/plans/README.md
+feature_coverage: wiki/features/feature-coverage.md
+implementation_log: wiki/evolution/implementation-log.md
+architecture_decisions: wiki/architecture/decisions
+exclude:
+  - node_modules
+  - .venv
+  - dist
+  - build
+  - __pycache__

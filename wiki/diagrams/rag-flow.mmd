@@ -1,0 +1,6 @@
+flowchart TD
+    Question["Question"] --> Agent["Foundry Agent"]
+    Agent --> Knowledge["Knowledge Base / File Search"]
+    Knowledge --> Context["Retrieved Context"]
+    Context --> Answer["Grounded Answer"]
+    Answer --> Citations["Citations"]

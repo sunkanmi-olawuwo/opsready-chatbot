@@ -1,0 +1,7 @@
+flowchart LR
+    User["User"] --> UI["React Dashboard"]
+    UI --> API["FastAPI API"]
+    API --> Foundry["Microsoft Foundry Agent"]
+    Foundry --> Knowledge["Knowledge Base / File Search"]
+    Knowledge --> Blob["Azure Blob Storage"]
+    Knowledge --> Search["Azure AI Search"]
