@@ -1,0 +1,23 @@
+name: AI Evaluation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "evals/**"
+      - "prompts/**"
+      - ".github/workflows/ai-evaluation.yml"
+
+jobs:
+  evaluation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python evals/scripts/run_eval.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-results
+          path: evals/results
